@@ -3,76 +3,119 @@
 <meta charset="UTF-8">
 
 <head>
-<!--- Created by Brianna Zampini on Nov 20 --->
-<title>Personal website</title>
-<link rel="stylesheet" href="https://use.typekit.net/atg3vfc.css">
+  <!-- Created by Brianna Zampini on Nov 20 -->
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="https://use.typekit.net/atg3vfc.css">
 
-<style> 
- .header {
-  background-color: #e2f1fb; /* light blue */
-  text-align: center;
-}
+  <style>
+   /* * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }*/
 
-.header img {
-  width: 500px; /* Set the width of the image */
-  height: auto; /* Maintain aspect ratio */
-  margin-left: 100px; /* Moves the image to the right */
-}
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #aed1e3; /* dark blue */
-    display: flex; /* Use flexbox for horizontal layout */
-  }
+    body {
+      font-family: "futura-pt", sans-serif;
+    }
 
-  .topnav a {
-    color: #493a2d; /* brown */
-    text-align: center;
-    padding: 10px;
-    font-size: 25px;
-    text-decoration: none;
-    width: 100%;
-   font-weight: bold; /* Make the text bold */
-  }
+    .header {
+      background-color: #e2f1fb; /* Light blue */
+      text-align: center;
+    }
 
-  .topnav a:hover {
-    background-color: #e2f1fb; /* light blue */
-    color: #493a2d; /* brown */
-  }
+    .header img {
+      width: 500px; /* Set the width of the image */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0px 100px 0px 700px; /* Center the image */
+      display: block; /* Ensures centering */
+    }
 
-  .footer {
-    background-color: #e2f1fb;
-    padding: 10px;
-    text-align: center;
-  }
-  body {
-  background-color: #e2f1fb; /* Light gray background for the whole page */
-  font-family: "futura-pt", sans-serif;
-  }
-  
-  p {
-  font-size: 25px; /* Adjust font size as needed */
-  text-align: left;
+    .topnav {
+      overflow: hidden;
+      background-color: #aed1e3; /* Dark blue */
+      display: flex; /* se fexbox for horizontal layout */
+    }
 
-}
+    .topnav a {
+      color: #493a2d; /* Brown */
+      text-align: center;
+      padding: 10px;
+      font-size: 25px;
+      text-decoration: none;
+      flex: 1; /* Distribute links evenly */
+      font-weight: bold; /* Make the text bold */
+    }
 
-  
-</style>
+    .topnav a:hover {
+      background-color: #e2f1fb; /* Light blue */
+      color: #493a2d; /* Brown */
+    }
 
+    .main-section {
+      display: flex;
+     /* height: calc(100vh - 130px); /* Full height minus header and nav */
+    }
+
+    .column {
+      flex: 1;
+      display: flex;
+      align-items: center; /* Center content vertically */
+      justify-content: center; /* Center content horizontally */
+    }
+
+    .left-column {
+      background-color: #aed1e3; /* Light blue */
+    }
+
+    .right-column {
+      background-color: #e2f1fb; /* Lighter blue */
+    }
+
+    .content {
+      text-align: center;
+      color: #493a2d; /* Text color */
+      font-size: 25px;
+    }
+
+    .footer {
+      background-color: #e2f1fb;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+      color: #493a2d; /* Brown */
+    }
+  </style>
 </head>
-  
-<body> 
-  
+
+<body>
   <div class="header">
-    <img src="port-folio.png" alt="portfolio" >
+    <img src="port-folio.png" alt="Portfolio">
   </div>
-  
+
   <div class="topnav">
     <a href="#">PHYSICAL ART</a>
     <a href="#">DIGITAL ART</a>
     <a href="#">MARKETING</a>
   </div>
 
+  <div class="main-section">
+    <div class="column left-column">
+      <div class="content">
+        <h2>Left Column</h2>
+        <p>Content for the left column goes here.</p>
+      </div>
+    </div>
+    <div class="column right-column">
+      <div class="content">
+        <h2>Right Column</h2>
+        <p>Content for the right column goes here.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Footer Content © 2024</p>
+  </div>
 </body>
 
 </html>
