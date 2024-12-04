@@ -1,187 +1,184 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-<meta charset="UTF-8">
-
 <head>
-  <!-- Created by Brianna Zampini on Nov 20 -->
-  <title>Personal Website</title>
-  <link rel="stylesheet" href="https://use.typekit.net/atg3vfc.css">
+    <meta charset="UTF-8">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="https://use.typekit.net/atg3vfc.css">
 
-  <style>
-   /* * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }*/
+    <style>
+        /* General Styles */
+        body {
+            font-family: "futura-pt", sans-serif;
+        }
 
-    body {
-      font-family: "futura-pt", sans-serif;
-    }
+        /* Header Styles */
+        .header {
+            background-color: #e2f1fb; /* Light blue */
+            text-align: center;
+        }
 
-    .header {
-      background-color: #e2f1fb; /* Light blue */
-      text-align: center;
-    }
+        .header img {
+            width: 500px; /* Set the width of the image */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 100px 0 700px; /* Center the image */
+            display: block; /* Ensures centering */
+        }
 
-    .header img {
-      width: 500px; /* Set the width of the image */
-      height: auto; /* Maintain aspect ratio */
-      margin: 0px 100px 0px 700px; /* Center the image */
-      display: block; /* Ensures centering */
-    }
+        /* Navbar Styles */
+        .topnav {
+            display: flex; /* Use flexbox for horizontal layout */
+            background-color: #aed1e3; /* Dark blue */
+            overflow: hidden;
+        }
 
-    .topnav {
-      overflow: hidden;
-      background-color: #aed1e3; /* Dark blue */
-      display: flex; /* se fexbox for horizontal layout */
-    }
+        .topnav a {
+            color: #493a2d; /* Brown */
+            text-align: center;
+            padding: 10px;
+            font-size: 25px;
+            text-decoration: none;
+            flex: 1; /* Distribute links evenly */
+            font-weight: bold; /* Make the text bold */
+        }
 
-    .topnav a {
-      color: #493a2d; /* Brown */
-      text-align: center;
-      padding: 10px;
-      font-size: 25px;
-      text-decoration: none;
-      flex: 1; /* Distribute links evenly */
-      font-weight: bold; /* Make the text bold */
-    }
+        .topnav a:hover {
+            background-color: #e2f1fb; /* Light blue */
+            color: #493a2d; /* Brown */
+        }
 
-    .topnav a:hover {
-      background-color: #e2f1fb; /* Light blue */
-      color: #493a2d; /* Brown */
-    }
+        /* Main Section Styles */
+        .main-section {
+            display: flex;
+        }
 
-    .main-section {
-      display: flex;
-     /* height: calc(100vh - 130px); /* Full height minus header and nav */
-    }
+        .column {
+            flex: 1;
+            display: flex;
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+        }
 
-    .column {
-      flex: 1;
-      display: flex;
-      align-items: center; /* Center content vertically */
-      justify-content: center; /* Center content horizontally */
-    }
+        .left-column {
+            background-color: #aed1e3; /* Light blue */
+        }
 
-    .left-column {
-      background-color: #aed1e3; /* Light blue */
-    }
+        .right-column {
+            background-color: #e2f1fb; /* Lighter blue */
+        }
 
-    .right-column {
-      background-color: #e2f1fb; /* Lighter blue */
-    }
+        .content {
+            text-align: center;
+            color: #493a2d; /* Text color */
+            font-size: 25px;
+        }
 
-    .content {
-      text-align: center;
-      color: #493a2d; /* Text color */
-      font-size: 25px;
-    }
+        /* Heading Styles */
+        h2 {
+            color: #493a2d; /* Brown */
+            font-size: 105px;
+            text-align: center;
+            font-weight: 700; /* Ensure normal weight */
+            margin: 0 100px 20px 100; /* Adjust margins */
+        }
 
-    .footer {
-      background-color: #e2f1fb;
-      padding: 10px;
-      text-align: center;
-      font-size: 18px;
-      color: #493a2d; /* Brown */
-    }
-    
- h2 {
-  color: #493a2d; /* brown about me text */
-  font-size: 105px;
-  text-align: center;
-  font-weight: 700; /* Ensure normal weight */
-  margin: 0 100 20px 100; /* Removes top margin and adds spacing below */
-}
-.rectangle {
-  background-color: #d2d0e8; /* Light purple */
-  width: 400px; /* Fixed width in pixels */
-  height: 80px; /* Height in pixels */
-  margin: 20px auto; /* Centers the rectangle horizontally and adds spacing */
-  border: 2px solid #493a2d; /* Adds a 2px solid border with brown color */
-  border-radius: 10px; /* Rounds the corners */
-  display: flex; /* Flexbox for easy centering */
-  justify-content: center; /* Horizontally center content */
-  align-items: center; /* Vertically center content */
-  text-align: center; /* Center text alignment */
-}
-    .rectangle-text {
-  color: #493a2d; /* Matches the border color */
-  font-size: 50px; /* Adjust font size as needed */
-  font-weight: bold; /* Make the text bold */
-  margin: 0; /* Remove default margins from <p> */
-  text-decoration: none;
-}
-    p {
-  color: #493a2d;
-  font-size: 25px;
-  line-height: 1.6;
-  text-align: justify;
-  margin: 50px 0;
-  padding: 0 50px;
-}
-    
-.styled-image {
-  width: 400px;
-  height: auto;
- /*  display: block; /* Makes the image a block-level element */
-  /* margin-left: auto; /* Automatically adjusts left margin */
- /*  margin-right: auto; /* Automatically adjusts right margin */
-      margin: 0px 60px 0px 0px; /* Adds a right margin of 150px  */
-}
-    .drawings{
-      width: 600px;
-  height: auto;
-       margin: 50px 0;
-      
-    }
+        /* Rectangle Styles */
+        .rectangle {
+            background-color: #d2d0e8; /* Light purple */
+            width: 400px; /* Fixed width */
+            height: 80px; /* Fixed height */
+            margin: 20px auto; /* Center horizontally */
+            border: 2px solid #493a2d; /* Brown border */
+            border-radius: 10px; /* Rounded corners */
+            display: flex; /* Flexbox for easy centering */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            text-align: center; /* Center text alignment */
+        }
 
-  </style>
+        .rectangle-text {
+            color: #493a2d; /* Matches border color */
+            font-size: 50px; /* Font size */
+            font-weight: bold; /* Bold text */
+            margin: 0; /* Remove default margins */
+            text-decoration: none;
+        }
+
+        /* Paragraph Styles */
+        p {
+            color: #493a2d; /* Text color */
+            font-size: 25px; /* Font size */
+            line-height: 1.6; /* Line height */
+            text-align: justify; /* Justify text */
+            margin: 50px 0; /* Vertical margins */
+            padding: 0 50px; /* Horizontal padding */
+        }
+
+        /* Image Styles */
+        .styled-image {
+            width: 400px;
+            height: auto;
+            margin: 0 60px 0 0; /* Right margin */
+        }
+
+        .drawings {
+            width: 600px;
+            height: auto;
+            margin: 50px 0; /* Vertical margins */
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #e2f1fb;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            color: #493a2d; /* Brown */
+        }
+    </style>
 </head>
 
 <body>
-  <div class="header">
-    <img src="port-folio.png" alt="Portfolio">
-  </div>
-
-  <div class="topnav">
-    <a href="#">PHYSICAL ART</a>
-    <a href="#">DIGITAL ART</a>
-    <a href="#">MARKETING</a>
-  </div>
-
-  <div class="main-section">
-    <div class="column left-column">
-      <div class="content">
-        <h2>  <img src="education (1).png" alt="drawings" class="drawings">
-</h2>
-        
-      </div>
+    <!-- Header Section -->
+    <div class="header">
+        <img src="port-folio.png" alt="Portfolio">
     </div>
-    <div class="column right-column">
-      <div class="content">
-        <h2>CUSTOM ART<br> 
-        COMMISSIONS!
-        </h2>
-      <div class="rectangle">
-  <p class="rectangle-text">
-        <a href="https://www.instagram.com/br1zart/" target="_blank"> BR1ZART</a></p>
-</div>
 
-
-        <p>In addition to my academic pursuits, I have turned my creative endeavors into a passion project by offering custom art commissions.<br>
-        Specializing in traditional pencil-and-paper drawings, I focus on creating detailed portraits of animals and people. I aim to deliver exceptional, personalized artwork suited to my clients unique vision.
-<br>
-        Pricing varies based on the size and complexity of the subject.You can explore some of my favorite works on my  instagram account. Feel free to reach out - I’d love to help bring your ideas to life!
-
-
-</p>
-      </div>
+    <!-- Navbar Section -->
+    <div class="topnav">
+        <a href="#">PHYSICAL ART</a>
+        <a href="#">DIGITAL ART</a>
+        <a href="#">MARKETING</a>
     </div>
-  </div>
 
-  <div class="footer">
-    <p>Footer Content © 2024</p>
-  </div>
+    <!-- Main Section -->
+    <div class="main-section">
+        <div class="column left-column">
+            <div class="content">
+                <h2>
+                    <img src="education (1).png" alt="Drawings" class="drawings">
+                </h2>
+            </div>
+        </div>
+        <div class="column right-column">
+            <div class="content">
+                <h2>CUSTOM ART<br>COMMISSIONS!</h2>
+                <div class="rectangle">
+                    <p class="rectangle-text">
+                        <a href="https://www.instagram.com/br1zart/" target="_blank">BR1ZART</a>
+                    </p>
+                </div>
+                <p>
+                    In addition to my academic pursuits, I have turned my creative endeavors into a passion project by offering custom art commissions.<br>
+                    Specializing in traditional pencil-and-paper drawings, I focus on creating detailed portraits of animals and people. I aim to deliver exceptional, personalized artwork suited to my clients' unique vision.<br>
+                    Pricing varies based on the size and complexity of the subject. You can explore some of my favorite works on my Instagram account. Feel free to reach out - I’d love to help bring your ideas to life!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>Footer Content © 2024</p>
+    </div>
 </body>
-
 </html>
